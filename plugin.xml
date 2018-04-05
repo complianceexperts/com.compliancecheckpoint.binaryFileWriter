@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.compliancecheckpoint.binaryFileWriter" version="1.0.0">
+    <name>BinaryFileWriter</name>
+    <description>BinaryFileWriter Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>BinaryFileWriter</keywords>
+    <js-module src="www/BinaryFileWriter.js" name="BinaryFileWriter">
+        <clobbers target="BinaryFileWriter" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="BinaryFileWriter">
+                <param name="ios-package" value="BinaryFileWriter"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/BinaryFileWriter.h" />
+        <source-file src="src/ios/BinaryFileWriter.m" />
+        <header-file src="src/ios/Base64.h" />
+        <source-file src="src/ios/Base64.m" />
+    </platform>
+    <platform name="android">
+      <config-file target="config.xml" parent="/*">
+        <feature name="BinaryFileWriterPlugin">
+          <param name="android-package" value="com.compliancecheckpoint.binaryFileWriter.BinaryFileWriterPlugin"/>
+        </feature>
+      </config-file>
+      <source-file src="src/android/BinaryFileWriterPlugin.java" target-dir="src/com/compliancecheckpoint/binaryFileWriter" />
+    </platform>
+</plugin>
