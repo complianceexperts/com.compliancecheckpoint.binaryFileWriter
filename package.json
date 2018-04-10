@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "name": "com.compliancecheckpoint.binaryFileWriter",
-  "author": "don.coleman@gmail.com",
+  "author": "Dilhan Jayathilake",
   "cordova": {
     "id": "com.compliancecheckpoint.binaryFileWriter",
     "platforms": [
