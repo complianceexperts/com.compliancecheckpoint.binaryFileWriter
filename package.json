@@ -9,6 +9,10 @@
       "ios"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/complianceexperts/com.compliancecheckpoint.binaryFileWriter.git"
+  },
   "description": "Cordova Plugin that write file to different OS",
   "license": "Apache License, Version 2.0",
   "repo": "https://github.com/complianceexperts/com.compliancecheckpoint.binaryFileWriter",
